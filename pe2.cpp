@@ -43,7 +43,6 @@ void printHighestNames(studentType arr[], int n, int highest) {
     cout << "Student(s) with the highest score (" << highest << "):" << '\n';
     for (int i = 0; i < n; ++i) {
         if (arr[i].testScore == highest) {
-            // print as: last name, first name
             cout << left << setw(20) << (arr[i].studentLName + ", " + arr[i].studentFName) << '\n';
         }
     }
@@ -69,3 +68,4 @@ int main() {
     printHighestNames(classList, CLASS_SIZE, highest);
     return 0;
 }
+
